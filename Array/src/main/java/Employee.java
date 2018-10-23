@@ -40,9 +40,7 @@ public class Employee {
         return dept;
     }
 
-    public void setDept(String dept) {
-        this.dept = dept;
-    }
+ 
 
     @Override
     public String toString() {
