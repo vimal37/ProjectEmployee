@@ -1,13 +1,17 @@
+package com.vimal.dao;
+
+import com.vimal.entity.Employee;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListCRUD {
+@Component
+public class ArrayListCRUDImpl implements ArrayListCRUD{
 
     List<Employee> employees = (List <Employee>) new ArrayList<Employee>();
 
-
-
-    public void addData(Employee employee1,Employee employee2,Employee employee3){
+    public void addData(Employee employee1, Employee employee2, Employee employee3){
         employees.add( employee1 );
         employees.add( employee2 );
         employees.add( employee3 );

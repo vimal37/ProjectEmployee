@@ -1,8 +1,16 @@
+package com.vimal.entity;
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class Employee {
     private int empId;
     private String firstName;
     private String lastName;
     private String dept;
+
+    public Employee() {
+    }
 
     public Employee(int empId, String firstName, String lastName, String dept) {
         this.empId = empId;
@@ -11,6 +19,14 @@ public class Employee {
         this.dept = dept;
     }
 
+
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
 
     public int getEmpId() {
         return empId;
@@ -36,15 +52,10 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public String getDept() {
-        return dept;
-    }
-
- 
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "com.vimal.entity.Employee{" +
                 "empId=" + empId +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
