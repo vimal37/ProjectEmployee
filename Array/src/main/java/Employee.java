@@ -10,7 +10,7 @@ public class Employee {
         this.lastName = lastName;
         this.dept = dept;
     }
-    public Employee(){}
+
 
     public int getEmpId() {
         return empId;
